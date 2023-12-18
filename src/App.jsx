@@ -5,14 +5,13 @@ import maplibregl from "maplibre-gl";
 import DeckGL from "@deck.gl/react";
 import { MapView } from "@deck.gl/core";
 import { IconLayer } from "@deck.gl/layers";
-//import AtlasIcon from "./data/location-icon-atlas.png";
 
 import IconClusterLayer from "../icon-cluster-layer";
 
 // Source data CSV
-const DATA_URL = "./data/new_dataset_DSNS.json"; // eslint-disable-line
-const AtlasIcon = "./data/location-icon-atlas.png";
-const mapIcons = "./data/location-icon-mapping.json";
+import DATA_URL from "./data/new_dataset_DSNS.json"; // eslint-disable-line
+import AtlasIcon from "./data/location-icon-atlas.png";
+import mapIcons from "./data/location-icon-mapping.json";
 
 const MAP_VIEW = new MapView({ repeat: true });
 const INITIAL_VIEW_STATE = {
