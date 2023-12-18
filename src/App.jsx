@@ -10,8 +10,9 @@ import { IconLayer } from "@deck.gl/layers";
 import IconClusterLayer from "../icon-cluster-layer";
 
 // Source data CSV
-const DATA_URL = "./data/new_dataset_DSNS.json"; // eslint-disable-line
-const AtlasIcon = "./data/location-icon-atlas.png";
+const DATA_URL = "/src/data/new_dataset_DSNS.json"; // eslint-disable-line
+const AtlasIcon = "/src/data/location-icon-atlas.png";
+const iconMapping = "/src/data/location-icon-mapping.json";
 
 const MAP_VIEW = new MapView({ repeat: true });
 const INITIAL_VIEW_STATE = {
@@ -60,7 +61,7 @@ function renderTooltip(info) {
 }
 
 /* eslint-disable react/no-deprecated */
-export default function App({ data = DATA_URL, iconMapping = "./data/location-icon-mapping.json", iconAtlas = AtlasIcon, showCluster = true, mapStyle = MAP_STYLE }) {
+export default function App({ data = DATA_URL, iconMapping = "src/data/location-icon-mapping.json", iconAtlas = AtlasIcon, showCluster = true, mapStyle = MAP_STYLE }) {
   const [hoverInfo, setHoverInfo] = useState({});
 
   const hideTooltip = () => {
