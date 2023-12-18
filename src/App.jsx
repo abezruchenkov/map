@@ -10,9 +10,9 @@ import { IconLayer } from "@deck.gl/layers";
 import IconClusterLayer from "../icon-cluster-layer";
 
 // Source data CSV
-const DATA_URL = "data/new_dataset_DSNS.json"; // eslint-disable-line
-const AtlasIcon = "data/location-icon-atlas.png";
-const mapIcons = "data/location-icon-mapping.json";
+const DATA_URL = "./data/new_dataset_DSNS.json"; // eslint-disable-line
+const AtlasIcon = "./data/location-icon-atlas.png";
+const mapIcons = "./data/location-icon-mapping.json";
 
 const MAP_VIEW = new MapView({ repeat: true });
 const INITIAL_VIEW_STATE = {
